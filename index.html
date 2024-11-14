@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Aplikasi Konversi Mata Uang</h1>
+        
+        <div class="input-section">
+            <label for="amount">Jumlah:</label>
+            <input type="number" id="amount" placeholder="Masukkan jumlah" required>
+        </div>
+
+        <div class="currency-section">
+            <label for="fromCurrency">Dari:</label>
+            <select id="fromCurrency">
+                <option value="USD">USD - Dollar</option>
+                <option value="IDR">IDR - Rupiah</option>
+                <option value="EUR">EUR - Euro</option>
+            </select>
+
+            <label for="toCurrency">Ke:</label>
+            <select id="toCurrency">
+                <option value="IDR">IDR - Rupiah</option>
+                <option value="USD">USD - Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+            </select>
+        </div>
+
+        <button id="convertButton">Konversi</button>
+
+        <div class="result-section">
+            <h2>Hasil: <span id="result">0</span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
